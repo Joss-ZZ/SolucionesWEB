@@ -4,6 +4,7 @@
     Author     : Juxn
 --%>
 
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="modelo.*, java.util.LinkedList" %>
 <!DOCTYPE html>
@@ -166,7 +167,8 @@
                             <tr>
                                 <td><%=vlista.get(i).getId_venta() %></td>
                                 <td><%=ctotal %></td>
-                                <td><%=totaltal %></td>
+                                <td pattern="^\d*(\.\d{0,2})?$"> <% DecimalFormat decimales = new DecimalFormat("0.00");%> 
+                                    <%=decimales.format(totaltal)%> </td>
                                 <td><%=vlista.get(i).getEstado() %></td>
                                 <td><%=vlista.get(i).getFecha() %></td>
                                 <td><a href="/EXAMEN_T3/admin/mispedidos.jsp?id_venta=<%=vlista.get(i).getId_venta()%>">Mas Detalles</a></td>
