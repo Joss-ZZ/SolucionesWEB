@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/06/2020, 12:25:30 AM
+    Author     : Juxn
+*/
+
+#datospro{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+img#edel{
+    width: 40%;
+}
+td#tdchiqui{
+    width: 6%;
+    text-align: center;
+}
+img#exccc{
+    width: 3%;
+    position: absolute;
+    right: 1%;
+}

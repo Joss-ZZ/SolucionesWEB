@@ -1,0 +1,264 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/06/2020, 01:59:56 PM
+    Author     : Juxn
+*/
+#message {
+position: fixed;
+top: 10%;
+left: 0;
+width: 16%;
+}
+#bt_basura{
+    width: 16%
+}
+#product,#vistaproducto{
+    font-family: 'Magra', sans-serif;
+}
+#lav{
+    padding-right: 8%;
+}
+form#inciar{
+    background: #e5f7e8;;
+}
+h1#registra,#logea,#carrito,#nomprod{
+    font-family: 'Fredericka the Great', cursive;
+}
+img#imgmas{
+    width: 17%
+}
+ima#emal{
+    width: 8%;
+}
+#modal_basura{
+text-align: right;
+padding-right: 10%;
+}
+#inner-message {
+    margin: 0 auto;
+}
+img#logo{
+    width: 70px;
+}
+img#logoabajo{
+    width: 40px;
+}
+img#logo2{
+    width: 284px;
+}
+img#spon{
+    width: 100%;
+}
+img#immodel{
+    width: 50%
+}
+#stilo{
+    border-bottom: 1px #e3b7f7;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom-style: dashed;
+}
+#st_first{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#im_2{
+    text-align: center;
+}
+#panel{
+    margin-top: 4%;
+}
+#bajos{
+   margin-bottom: 4%;
+}
+img#carro,#admin{
+    width: 25px;
+}
+img#newc{
+    width: 30px;
+}
+#produ{
+    text-align: center;
+}
+#promit{
+    margin-left: 16%;
+    margin-right: 16%;
+}
+#margen{
+    border: 1px solid #6c757d;
+    border-radius: 2%;
+    padding: 3%;
+}
+#canasta{
+    background: #ffc94a;
+}
+#stockkk{
+    border: solid 1px #f02626;
+    border-radius: 43%;
+    width: 33px;
+    background-color: red;
+    position: absolute;
+    top: -16px;
+    right: 22px;
+}
+#inprod{
+    padding: 28px;
+}
+#num{
+    padding: 0%;
+}
+#guiado{
+    margin-left: 1%;
+}
+
+
+img#pquelogo{
+    width: 54%
+}
+footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin-bottom: 4%;
+}
+#foot{
+    margin-top: 28%;
+}
+#foot2{
+    width: 100%;
+    height: 207px;
+}
+img#cargaimagen{
+    width: 100%
+}
+#nv{
+    background-color: #27282b;
+    opacity: 0.8;
+}
+#ndato{
+    width: 22%;
+}
+#rig{
+    text-align: right;
+}
+#sip{
+    margin: 0;
+}
+#p_caro{
+    font-size: 34px;
+    margin-left: 23px;
+}
+#icones{
+    background-color: #757575;
+    border-radius: 4px;
+}
+#pre_forma{
+    margin-top: 7%;
+    margin-left: 7%;    
+}
+#boxpeque{
+    padding-left: 6%;
+    border: solid 1px #cfb1ff;
+    box-shadow: inset 0 0 5px #cfb1ff;  
+    border-radius: 11px;
+    width: 277px;
+    margin-top: 8%;
+}
+#vistaproducto2{
+    font-family: 'Magra', sans-serif;
+    font-size: 11px;
+    color: #a2a8a5;
+}
+
+#valor_coger{
+    text-align: center;
+    border: #499af0a1 solid 1px;
+}
+#vistaproducto3{
+    font-family: 'Magra', sans-serif;
+    font-size: 29px;
+}
+
+#vistaproducto5{
+    font-family: 'Magra', sans-serif;
+    font-size: 13px;
+    color: #a2a8a5;
+}
+
+#valor2{
+    width: 14%; 
+}
+#logo3{
+    text-align: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label {
+  color: grey;
+  font-size: 30px;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+#lavel23{
+    color: grey;
+  font-size: 30px;
+}
+
+.favorito{
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+#lavel23:hover,
+#lavel23:hover ~ #lavel23 {
+    color: red;
+}
+
+input[type="radio"]:checked ~ #lavel23{
+    color: red;
+}
+
+#diseñopro{
+    width: 55%;
+}
+#idcuerpopedido{
+    margin-top:10%;
+    margin-bottom: 2%;
+}
+#impedido{
+    width: 15%;
+}
+#impedido{
+    text-align: right;
+}
+
+#izq{
+    background-color: red;
+    border-radius: 3px;
+    box-shadow: 4px 4px  5px 2px #6c757d; 
+}
+#alertanueva{
+    margin-left: 5%;
+}

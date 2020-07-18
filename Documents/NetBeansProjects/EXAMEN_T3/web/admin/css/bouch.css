@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/06/2020, 01:29:09 AM
+    Author     : Juxn
+*/
+#ds1{
+    border-top: solid; 
+    margin-bottom: 7%;
+}
+#ds2{
+    margin-bottom: 14%;
+    border-top: solid;
+}
+#ms2{
+    margin-top: 3%;
+}
+p#entr{
+    margin: 0;
+    font-family: 'Taviraj', serif;
+}
+p#res{
+    font-family: 'Taviraj', serif;
+}
+p#en_to{
+    margin: 0;
+    font-family: 'Taviraj', serif;
+}
+p#ti{
+    font-size: 61px;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+form{
+    width: 59%;
+    margin: auto;
+}
+img#log
+{
+    width: 62%;
+}
+div#pad{
+    margin-bottom: 1%;
+}
+table#tabl{
+    width: 105%;
+}
+td#p_le{
+    padding-left: 3%;
+    font-family: 'Josefin Slab', serif;
+}
+th#id_t{
+    font-family: 'Josefin Slab', serif;
+}
+td#id_d{
+    font-family: 'Josefin Slab', serif;
+}
+td#p_s{
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+}
+p#en_tcli{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Taviraj', serif;
+}
+td#p_le2{
+    
+    font-family: 'Josefin Slab', serif;
+}
+td#p_s2{
+    font-weight: bold;
+    text-align: right;
+    font-family: 'Josefin Slab', serif;
+}
+
+#srctable{
+    width: 20%;
+}
+
+#ptable{
+    padding-left: 5%;
+}
+#mapa{
+    height: 60px;
+}
+#venpedi{
+    margin-top:10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
