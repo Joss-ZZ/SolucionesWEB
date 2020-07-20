@@ -52,6 +52,10 @@
         <servlet-name>ValidarCuenta</servlet-name>
         <servlet-class>controler.ValidarCuenta</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControladorWishlist</servlet-name>
+        <servlet-class>controler.ControladorWishlist</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ControladorCategoria</servlet-name>
         <url-pattern>/ControladorCategoria</url-pattern>
@@ -103,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>ValidarCuenta</servlet-name>
         <url-pattern>/ValidarCuenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorWishlist</servlet-name>
+        <url-pattern>/ControladorWishlist</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

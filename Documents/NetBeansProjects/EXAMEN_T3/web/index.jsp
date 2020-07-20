@@ -105,6 +105,14 @@
                         <%  }%>
                     </div>
                     <!--  *****************************************-->
+                    <% if(user==null){
+                    }else{%>
+                    <div>
+                        <a href="" type="button" class="btn btn-light" data-toggle="modal" data-target="#ModalWishlist">
+                            <img id="wishlist" src="admin/image/wishlist.png">
+                        </a>
+                    </div>
+                    <%}%>
                     <div>
                         <a href="" type="button" class="btn btn-light" data-toggle="modal" data-target="#mymodal">
                             <img id="carro" src="admin/image/carrito.png">
@@ -266,6 +274,71 @@
                                     <%if(user!=null){%>
                                     <a href="mante_venta?id_user=<%=newid_usuario %>&id_ven=<%=newid_venta %>" type="button" class="btn btn-success" onclick="pagina(<%=newid_usuario %>,<%=newid_venta %>)">Comprar</a>
                                     <%}%>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <!-- **************************** ***********************************-->        
+                <!-- **************************** modal de Wishlist ***********************************-->
+                <div class="container">
+                    <div class="modal fade" id="ModalWishlist">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 id="carrito"class="modal-title display-4">Lista de deseos</h1>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>  
+                                </div>
+                                <%if(user==null){}
+                                else{%>
+                                <%}%>
+                                <div class="modal-body">
+                                <%if(user==null){%>
+                                    <div class="row">
+                                        <h1 class="display-4">Agrega Productos al Carrito</h1>
+                                    </div>
+                                <%}else{
+                                    Conexion conn = new Conexion();
+                                    WishList wish = new WishList(conn);
+                                    LinkedList<WishList> listaDeseos = wish.ListarWishList(user.getId_usuario());
+                                    for (WishList ws: listaDeseos){%>
+                                        
+                                    <div id="st_first" class="row">
+                                        <div id="stilo" class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <div id="im_2" class="row">
+                                                <di>
+                                                    <img id="immodel" src="<%=ws.getImagen_pro()%>"> 
+                                                </di>
+                                            </div>
+                                        </div>
+                                        <div  id="stilo" class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <div id="im_2" class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <p id="vistaproducto"><%=ws.getNombre_pro()%> - <%=ws.getCaracteristica_pro()%></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="stilo" class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                                            <div id="im_2" class="row">
+                                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                    <p style="margin-bottom: 0%; " id="vistaproducto" >S\. <%=ws.getPrecio_unidad() %></p>
+                                                </div>                                   
+                                            </div>
+                                            <div  class="row" >
+                                                <div id="modal_basura" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <div>
+                                                        <a type="button" class="close" href="ControladorWishlist?id_user=<%=ws.getId_usuario()%>&id_pro=<%=ws.getId_producto()%>&accion=BorrarProducto"><img id="bt_basura" src="admin/image/basura.png"></a>        
+                                                    </div>
+                                                </div>    
+                                            </div>    
+                                        </div>
+                                    </div>
+                                <%  }                                  
+                                    }
+                                    %>
+                                </div>
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                 </div>
                             </div>    

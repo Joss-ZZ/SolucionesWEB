@@ -92,9 +92,10 @@
                 var id=mycookies.length;
                 document.cookie = ""+id+"=" + testvalue; 
             }
-            function favorito(id){
-                
-                alert(id);
+            function favorito(id_usuario,id_producto){
+                alert(id_usuario);
+                alert(id_producto);
+                window.open("/EXAMEN_T3/ControladorWishlist?id_user="+id_usuario+"&id_pro="+id_producto+"&accion=agregar","_self");
             }
         </script>
         <%          boolean show=false;
@@ -322,12 +323,17 @@
                             <button type="button" class="btn btn-outline-info mt-2" disabled onclick="comentarios(<%=id %>)">Escribir comentario</button>
                             <%}%>
                         </div>
+                            <% int id_pro = Integer.parseInt(request.getParameter("id_pro"));%>
+                            <% Usuario user1=(Usuario)session.getAttribute("usuario");%>
+                            <%if(user1==null){
+                            }else{ %>                      
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <p class="favorito">
-                                <input id="radio8" type="radio" name="corazon" value=""  onclick="favorito(5)">
+                                <input id="radio8" type="radio" name="corazon" value=""  onclick="favorito(<%=user1.getId_usuario()%>,<%=id_pro%>)">
                                 <label  for="radio8" id="lavel23">♥</label><span id="vistaproducto5">Añadir a Favoritos</span>
                             </p>
                         </div> 
+                                <%}%>
                     </div>        
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">

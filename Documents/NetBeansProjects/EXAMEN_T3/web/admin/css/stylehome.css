@@ -78,6 +78,11 @@ img#immodel{
 img#carro,#admin{
     width: 25px;
 }
+
+img#wishlist,#admin{
+    width: 25px;
+}
+
 img#newc{
     width: 30px;
 }
