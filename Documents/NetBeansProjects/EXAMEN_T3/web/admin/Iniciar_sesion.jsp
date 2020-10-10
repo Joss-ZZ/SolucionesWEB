@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="stylehome.css">
+        <link rel="stylesheet" type="text/css" href="admin/css/stylehome.css">
         <script type="text/javascript" src="/EXAMEN_T3/admin/js/validariniciar.js"></script>
         <title>JSP Page</title>
     </head>
@@ -83,11 +83,11 @@
                                <label class="col-form-label">Genero</label> 
                             </div>
                             <div class="row" >
-                                <img id="imgmas" src="EXAMEN_T3/admin/image/masculino.png">
+                                <img id="imgmas" src="admin/image/masculino.png">
                                 <div id="lav">
                                     <input  id="genero" type="radio"  name="genero" value="Masculino" required="true">
                                 </div>
-                                <img id="imgmas" src="EXAMEN_T3/admin/image/femenino.png">
+                                <img id="imgmas" src="admin/image/femenino.png">
                                 <div id="lav">
                                     <input  id="genero" type="radio"  name="genero" value="Femenino" required="true"> 
                                 </div>
